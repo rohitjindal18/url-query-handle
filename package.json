@@ -1,0 +1,35 @@
+{
+  "name": "url-query-handle",
+  "version": "1.0.0",
+  "description": "It allows you to append / remove query params from browser url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitjindal18/url-query-handle.git"
+  },
+  "keywords": [
+    "query",
+    "params",
+    "add",
+    "query",
+    "params",
+    "remove",
+    "query",
+    "params",
+    "handle",
+    "url",
+    "query",
+    "params",
+    "url",
+    "param"
+  ],
+  "author": "rohit.jindal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitjindal18/url-query-handle/issues"
+  },
+  "homepage": "https://github.com/rohitjindal18/url-query-handle#readme"
+}
