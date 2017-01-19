@@ -33,6 +33,8 @@
   },
   "homepage": "https://github.com/rohitjindal18/url-query-handle#readme",
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0"
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "nodemon": "^1.11.0"
   }
 }
