@@ -4,7 +4,7 @@
   "description": "It allows you to append / remove query params from browser url",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && node dist/index.js",
     "build": "babel index.js --out-dir dist"
   },
   "repository": {
