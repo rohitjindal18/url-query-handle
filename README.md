@@ -11,25 +11,25 @@ Usage:
 var urlHandle = require('url-query-handle');
 To Add Param to URL
 
-urlHandle.addParam('www.flipkart.com','a=123');
-// www.flipkart.com?a=123
-urlHandle.addParam('www.flipkart.com?b=456','a=123');
-// www.flipkart.com?b=456&a=123
+urlHandle.addParam('www.abc.com','a=123');
+// www.abc.com?a=123
+urlHandle.addParam('www.abc.com?b=456','a=123');
+// www.abc.com?b=456&a=123
 
 To Add Multiple Params to URL
 
-urlHandle.addMultipleParams("www.flipkart.com", {a:123, b:456});
-// www.flipkart.com?b=456&a=123
+urlHandle.addMultipleParams("www.abc.com", {a:123, b:456});
+// www.abc.com?b=456&a=123
 
 To Remove Param from URL
 
-urlHandle.removeParam("www.flipkart.com?a=123",'a');
-// www.flipkart.com
+urlHandle.removeParam("www.abc.com?a=123",'a');
+// www.abc.com
 
-urlHandle.removeParam("www.flipkart.com?b=456&a=123",'a');
-// www.flipkart.com?b=456
+urlHandle.removeParam("www.abc.com?b=456&a=123",'a');
+// www.abc.com?b=456
 
 To Fetch Param value
 
-urlHandle.getParamValue("www.flipkart.com?a=123&b=456", 'a');
+urlHandle.getParamValue("www.abc.com?a=123&b=456", 'a');
 //123
