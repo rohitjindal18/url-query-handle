@@ -1,6 +1,6 @@
 {
   "name": "url-query-handle",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "It allows you to append / remove query params from browser url",
   "main": "dist/index.js",
   "scripts": {
