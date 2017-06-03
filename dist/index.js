@@ -63,19 +63,13 @@ function getParamValue(url, paramName) {
     if (url && url.indexOf(paramName) > -1) {
         var query = url.split('?')[1];
         if (query.indexOf('&') > -1) {
-            console.log(query);
             var value = query.split('&').filter(function (item) {
                 console.log(item);
                 return item.split('=')[0] === paramName;
             });
-            console.log('');
             return value[0].split('=')[1];
         } else {
             return query.split('=')[1];
         }
     }
 }
-
-(function () {
-    console.log(getParamValue("http://www.flipkart.com?a=123&b=456", 'b'));
-})();

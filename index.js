@@ -22,7 +22,7 @@ export function removeParam(url, paramToRemove) {
  */
 export function addParam(url, paramToAdd) {
     return url.trim().indexOf('?') > -1 ? `${url.trim()}&${paramToAdd}` :
-    `${url.trim()}?${paramToAdd}`;
+        `${url.trim()}?${paramToAdd}`;
 }
 
 /**
@@ -33,10 +33,10 @@ export function addMultipleParams(url, paramsToAdd) {
     if (paramsToAdd) {
         let queryParam = [];
         Object.keys(paramsToAdd).forEach((key) => {
-              queryParam.push(`${key}=${paramsToAdd[key]}`)
+            queryParam.push(`${key}=${paramsToAdd[key]}`)
         })
         return url.trim().indexOf('?') > -1 ? `${url.trim()}&${queryParam.join('&')}`
-        : `${url.trim()}?${queryParam.join('&')}`
+            : `${url.trim()}?${queryParam.join('&')}`
     }
 }
 
@@ -48,7 +48,6 @@ export function getParamValue(url, paramName) {
         const query = url.split('?')[1];
         if (query.indexOf('&') > -1) {
             const value = query.split('&').filter((item) => {
-                console.log(item);
                 return item.split('=')[0] === paramName;
             });
             return value[0].split('=')[1];
