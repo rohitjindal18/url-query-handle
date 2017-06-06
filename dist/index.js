@@ -64,7 +64,6 @@ function getParamValue(url, paramName) {
         var query = url.split('?')[1];
         if (query.indexOf('&') > -1) {
             var value = query.split('&').filter(function (item) {
-                console.log(item);
                 return item.split('=')[0] === paramName;
             });
             return value[0].split('=')[1];
